@@ -1,69 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My Github Page</title> <!-- title name of the page    -->
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                background-color: #f8f9fa;
-                font-family: "Lucida Console", monospace;
-                color: #333;
-            }
-
-            .content-wrapper {
-                max-width: 720px;
-                margin: 48px auto;
-                padding: 32px;
-                background-color: #ffffff;
-                border-radius: 12px;
-                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-            }
-
-            h1, h3, h4 {
-                text-align: center;
-                color: #333;
-                font-family: "Lucida Console";
-                text-align: center;
-            }
-            p {
-                text-align: center;
-                color: #333;
-                font-family: "Lucida Console";
-            }
-            a {
-                font-weight: bold;
-                text-decoration: underline;
-                position: relative;
-                display: inline-block;
-                color: burlywood;  /* Default color */
-                transition: color 0.2s ease-in-out;
-            }
-
-            a:hover {
-                animation: rainbow 1s linear infinite;
-            }
-
-            /* Rainbow animation */
-            @keyframes rainbow {
-                0% { color: red; }
-                14% { color: orange; }
-                28% { color: yellow; }
-                42% { color: green; }
-                57% { color: blue; }
-                71% { color: indigo; }
-                85% { color: violet; }
-                100% { color: red; }
-            }
-        </style>
-    </head>
-    <body>
-        <h1> Hello, This is My Github Page!</h1>
-        <h3> I am Nakarin Phoorahong</h3>
-        <h4> Undergraduate student at Faculty of Information Communication and Technology, Mahidol University</h4>
-        <p>Focused on Information and Communication Technology at Mahidol University with interests in data science and AI.</p>
-        <!-- <h4> Here's my current cv: <a href="ResumeGITHUB.pdf" target="_blank">Resume</a></h4> -->
-
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nakarin Phoorahong - AI Developer | Fourth-year ICT undergrad at Mahidol University specializing in AI, data analytics, and quantitative trading.">
+    <meta name="keywords" content="AI Developer, Machine Learning, Data Science, Mahidol University, Portfolio">
+    <meta name="author" content="Nakarin Phoorahong">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Nakarin Phoorahong | AI Developer">
+    <meta property="og:description" content="Fourth-year ICT undergrad at Mahidol who codes by day and simulates trading strategies by night.">
+    <meta property="og:type" content="website">
+    
+    <title>Nakarin Phoorahong | AI Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow cyan"></div>
+    <div class="bg-glow magenta"></div>
+    <div class="bg-glow violet"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">NP</a>
+            
+            <ul class="navbar-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+            
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-container">
+                    <!-- Left - Intro -->
+                    <div class="hero-intro">
+                        <div class="hero-badge">Available for Collaboration</div>
+                        
+                        <h1 class="hero-name">Nakarin Phoorahong</h1>
+                        
+                        <p class="hero-role">AI Developer</p>
+                        
+                        <p class="hero-bio">
+                            Fourth-year ICT undergrad at Mahidol who codes by day and simulates trading strategies by night. Into quantum computing, data analytics, and anything that makes markets and medicine smarter—always learning, always building.
+                        </p>
+                        
+                        <div class="hero-tagline">Every Second Counts</div>
+                        
+                        <div class="hero-cta">
+                            <a href="projects.html" class="btn btn-primary">
+                                View Projects
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right - Avatar -->
+                    <div class="hero-avatar">
+                        <div class="avatar-container">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-inner">
+                                <span class="avatar-placeholder">NP</span>
+                            </div>
+                            <div class="avatar-corner top-left"></div>
+                            <div class="avatar-corner top-right"></div>
+                            <div class="avatar-corner bottom-left"></div>
+                            <div class="avatar-corner bottom-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tech Stack Section -->
+            <section class="tech-section">
+                <h2 class="section-title">Tech Stack</h2>
+                
+                <div class="tech-grid">
+                    <!-- Python -->
+                    <div class="tech-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
+                        </svg>
+                        <span>Python</span>
+                    </div>
+                    
+                    <!-- SQL -->
+                    <div class="tech-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.59 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2zm6 12c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V17zm0-4c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V13zm0-4c0 .5-2.13 2-6 2s-6-1.5-6-2V6.77C7.61 7.55 9.72 8 12 8s4.39-.45 6-1.23V9z"/>
+                        </svg>
+                        <span>SQL</span>
+                    </div>
+                    
+                    <!-- TensorFlow -->
+                    <div class="tech-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-6.155-3.564v14.018L12.472 24V0l10.248 5.856z"/>
+                        </svg>
+                        <span>TensorFlow</span>
+                    </div>
+                    
+                    <!-- PyTorch -->
+                    <div class="tech-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12.005 0L4.952 7.053a9.865 9.865 0 000 14.022 9.866 9.866 0 0014.022 0c3.984-3.9 3.986-10.205.085-14.023l-1.744 1.743c2.904 2.905 2.904 7.634 0 10.538s-7.634 2.904-10.538 0-2.904-7.634 0-10.538l4.647-4.646.852-.853zm3.812 2.163a1.584 1.584 0 10-.001 3.168 1.584 1.584 0 000-3.168z"/>
+                        </svg>
+                        <span>PyTorch</span>
+                    </div>
+                    
+                    <!-- Alteryx -->
+                    <div class="tech-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span>Alteryx</span>
+                    </div>
+                    
+                    <!-- Power BI -->
+                    <div class="tech-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M13 3v18h5V8h-5V3zm-7 8v10h5V11H6zm14-8v18h5V3h-5z"/>
+                        </svg>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            <span>&lt;</span> Built with passion <span>/&gt;</span> © 2024 Nakarin Phoorahong
+        </p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
 </html>
