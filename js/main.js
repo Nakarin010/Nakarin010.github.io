@@ -136,15 +136,15 @@ function initModals() {
     const projects = {
         'allcare': {
             title: 'AllCare',
-            tagline: 'AI-powered dermatological diagnosis for remote healthcare',
-            summary: 'AllCare is a mobile-first AI solution designed to bridge Thailand\'s dermatology staffing gap. Using advanced deep learning models, it enables remote diagnosis of skin conditions, making dermatological care accessible to underserved communities.',
-            techStack: ['Python', 'TensorFlow', 'OpenCV', 'YOLO', 'SAM', 'Flask'],
+            tagline: 'Leverage the power ML and AL in dermatological diagnosis for remote healthcare',
+            summary: 'AllCare is a mobile-first AI solution designed to bridge Thailand\'s dermatology staffing gap. Using advance machine and active learning models, it enables remote diagnosis of skin conditions, making dermatological care accessible to underserved communities.',
+            techStack: ['Python', 'TensorFlow', 'OpenCV', 'Unet', 'Figma', 'Draw.io', 'Flask'],
             metrics: [
                 { value: '94%', label: 'Accuracy' },
                 { value: '50+', label: 'Skin Conditions' },
                 { value: '<2s', label: 'Response Time' }
             ],
-            github: 'https://github.com'
+            github: 'https://github.com/ChawanakornI/SeniorProjectAl'
         },
         'quantflow': {
             title: 'QuantFlow',
