@@ -80,50 +80,78 @@
                 <a class="text-link" href="mailto:nakarinn0101@gmail.com?subject=Blog%20ideas">want to discuss more</a>
             </div>
             <div class="blog-grid">
-                <article class="blog-card">
+                <article class="blog-card" data-post="shipping-models">
                     <div class="blog-meta">
                         <span class="blog-badge">Oct 2024</span>
                         <span class="blog-badge accent">MLOps</span>
                         <span class="blog-read-time">6 min read</span>
                     </div>
                     <h3>Shipping models with confidence</h3>
-                    <p>How I set up guardrails, alerts, and rollback plans so models keep behaving after launch.</p>
+                    <p>Placeholder blurb for an upcoming post. I will add the full summary here soon.</p>
                     <div class="blog-footer">
-                        <span class="blog-note">Draft in progress</span>
-                        <a class="text-link" href="#" aria-label="Read Shipping models with confidence">Read the post</a>
+                        <button class="text-link blog-preview-btn" data-post="shipping-models" aria-label="Preview Shipping models with confidence">Quick preview</button>
+                        <a class="text-link" href="blog.html?post=shipping-models" aria-label="Read Shipping models with confidence">Read the post</a>
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" data-post="allcare-triage">
                     <div class="blog-meta">
                         <span class="blog-badge">Sep 2024</span>
                         <span class="blog-badge accent">Healthcare AI</span>
                         <span class="blog-read-time">5 min read</span>
                     </div>
                     <h3>Building AllCare's triage loop</h3>
-                    <p>The steps I used to keep clinicians in the loop and tune a dermatology model for real-world use.</p>
+                    <p>Placeholder description for this story. Final content will be added later.</p>
                     <div class="blog-footer">
-                        <span class="blog-note">Preview</span>
-                        <a class="text-link" href="#" aria-label="Read Building AllCare's triage loop">Read the post</a>
+                        <button class="text-link blog-preview-btn" data-post="allcare-triage" aria-label="Preview Building AllCare's triage loop">Quick preview</button>
+                        <a class="text-link" href="blog.html?post=allcare-triage" aria-label="Read Building AllCare's triage loop">Read the post</a>
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" data-post="dashboards-used">
                     <div class="blog-meta">
                         <span class="blog-badge">Aug 2024</span>
                         <span class="blog-badge accent">Data</span>
                         <span class="blog-read-time">4 min read</span>
                     </div>
                     <h3>Dashboards that actually get used</h3>
-                    <p>Notes from pairing Power BI with lightweight Python services to keep dashboards fresh and actionable.</p>
+                    <p>Placeholder copy for this post. I will flesh this out with real notes soon.</p>
                     <div class="blog-footer">
-                        <span class="blog-note">Live soon</span>
-                        <a class="text-link" href="#" aria-label="Read Dashboards that actually get used">Read the post</a>
+                        <button class="text-link blog-preview-btn" data-post="dashboards-used" aria-label="Preview Dashboards that actually get used">Quick preview</button>
+                        <a class="text-link" href="blog.html?post=dashboards-used" aria-label="Read Dashboards that actually get used">Read the post</a>
                     </div>
                 </article>
             </div>
         </section>
     </main>
+
+    <div class="modal-overlay blog-modal-overlay" aria-hidden="true">
+        <div class="modal blog-modal" role="dialog" aria-modal="true" aria-label="Blog preview">
+            <div class="modal-header">
+                <button class="modal-close blog-modal-close" aria-label="Close preview">&times;</button>
+                <h2 class="blog-modal-title">Blog title</h2>
+                <p class="modal-tagline blog-modal-tagline">Loading preview...</p>
+                <div class="blog-modal-meta">
+                    <span class="blog-badge blog-modal-date">Date</span>
+                    <span class="blog-badge accent blog-modal-tag">Tag</span>
+                    <span class="blog-read-time blog-modal-readtime">0 min read</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <section>
+                    <h3 class="modal-section-title">Why read this</h3>
+                    <p class="blog-modal-summary">Loading...</p>
+                </section>
+                <section>
+                    <h3 class="modal-section-title">Highlights</h3>
+                    <ul class="blog-modal-takeaways"></ul>
+                </section>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary blog-read-more" href="#" aria-label="Read full blog post">Read full post</a>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <p>&copy; 2025 Nakarin Phoorahong</p>

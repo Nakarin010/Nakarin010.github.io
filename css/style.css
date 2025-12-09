@@ -299,6 +299,14 @@ footer {
   color: var(--text);
 }
 
+button.text-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
 .blog-section {
   margin-top: 3rem;
 }
@@ -364,6 +372,76 @@ footer {
 .blog-note {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.blog-modal-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+
+.blog-modal-summary {
+  color: var(--muted);
+}
+
+.blog-modal-takeaways {
+  list-style: disc;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+}
+
+.blog-hero {
+  margin: 2.5rem 0 1.5rem;
+}
+
+.blog-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  color: var(--muted);
+}
+
+.blog-detail-title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  color: var(--text);
+  margin-top: 0.35rem;
+}
+
+.blog-detail-subtitle {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.blog-detail-body {
+  display: grid;
+  gap: 1.1rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.blog-detail-body h3 {
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.blog-detail-summary {
+  color: var(--muted);
+}
+
+.blog-detail-takeaways {
+  list-style: disc;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.blog-detail-content p {
+  margin-bottom: 1rem;
 }
 
 .footer {
