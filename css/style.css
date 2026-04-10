@@ -127,12 +127,45 @@ footer {
   padding: 0.35rem 0 1rem;
 }
 
+/* Grid row height = max(tracks); tall image still stretched the hero. Pull photo out of flow on wide screens so .hero height follows copy. */
 .layout-home .hero-layout {
+  position: relative;
   align-items: start;
   gap: 1.35rem;
 }
 
-/* Portrait was dictating row height; cap image so Tech focus sits closer below */
+@media (min-width: 769px) {
+  .layout-home .hero-layout {
+    display: block;
+    padding-right: min(340px, 40%);
+  }
+
+  .layout-home .hero-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: min(320px, 38%);
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-home .hero-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 0;
+    gap: 1rem;
+  }
+
+  .layout-home .hero-photo {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+  }
+}
+
+/* Portrait crop; on desktop height is no longer tied to section flow */
 .layout-home .hero-photo img {
   max-height: min(360px, 52vh);
   width: 100%;
