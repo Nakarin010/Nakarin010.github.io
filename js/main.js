@@ -251,31 +251,3 @@ if (blogDetailRoot) {
   }
 }
 
-/** Home: desktop hero photo is out-of-flow (CSS); cap its height to the intro column so it cannot extend past the copy and cover Tech focus. */
-(function syncHomeHeroPortraitCap() {
-  const text = document.querySelector('.layout-home .hero-text');
-  const img = document.querySelector('.layout-home .hero-photo img');
-  if (!text || !img) return;
-
-  const mq = window.matchMedia('(min-width: 769px)');
-  const capPx = 360;
-
-  const apply = () => {
-    if (!mq.matches) {
-      img.style.removeProperty('max-height');
-      return;
-    }
-    const h = Math.ceil(text.getBoundingClientRect().height);
-    img.style.maxHeight = `${Math.min(capPx, Math.max(1, h))}px`;
-  };
-
-  apply();
-  window.addEventListener('resize', apply);
-  if (typeof ResizeObserver !== 'undefined') {
-    new ResizeObserver(apply).observe(text);
-  }
-  window.addEventListener('load', apply);
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(apply).catch(() => {});
-  }
-})();
