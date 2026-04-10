@@ -23,16 +23,16 @@ const blogPosts = {
     content: ['This is placeholder content for the blog detail page.', 'Replace it with the real story later.'],
     url: 'blog.html?post=shipping-models',
   },
-  'allcare-triage': {
-    title: "Building AllCare's triage loop",
-    tagline: 'Placeholder tagline for the AllCare triage post.',
+  'dermalytix-active-triage': {
+    title: 'Building Dermalytix Active triage loop',
+    tagline: 'Placeholder tagline for the Dermalytix Active triage post.',
     date: 'Sep 2024',
     tag: 'Healthcare AI',
     readTime: '5 min read',
     summary: 'Preview content coming soon. I will add the real summary later.',
     takeaways: ['Placeholder takeaway one.', 'Placeholder takeaway two.', 'Placeholder takeaway three.'],
     content: ['This is placeholder content for the blog detail page.', 'Replace it with the real story later.'],
-    url: 'blog.html?post=allcare-triage',
+    url: 'blog.html?post=dermalytix-active-triage',
   },
   'dashboards-used': {
     title: 'Dashboards that actually get used',
@@ -106,17 +106,17 @@ const modalTechStack = document.querySelector('.modal-tech-stack');
 const modalGithub = document.querySelector('.btn-github');
 
 const projects = {
-  allcare: {
-    title: 'AllCare',
+  'dermalytix-active': {
+    title: 'Dermalytix Active',
     tagline: 'Dermatology diagnostics assistance for remote care.',
     summary:
-      'AllCare bridges the dermatology staffing gap by providing an ML-powered assistant that triages skin concerns and speeds up response times for rural clinics.',
+      'Dermalytix Active bridges the dermatology staffing gap by providing an ML-powered assistant that triages skin concerns and speeds up response times for rural clinics.',
     metrics: [
       { value: '94%', label: 'Accuracy' },
       { value: '50+', label: 'Conditions covered' },
       { value: '<2s', label: 'Response time' },
     ],
-    techStack: ['Python', 'TensorFlow', 'OpenCV', 'Flask'],
+    techStack: ['Python', 'Flutter', 'OpenCV', 'Flask'],
     github: 'https://github.com/ChawanakornI/SeniorProjectAl',
   },
   quantflow: {

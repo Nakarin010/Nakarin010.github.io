@@ -130,30 +130,54 @@ footer {
 .layout-home .hero-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;
+  grid-template-areas:
+    "text photo"
+    "tech photo";
   align-items: start;
   gap: 1.35rem;
 }
 
 @media (min-width: 769px) {
+  .layout-home .hero-text {
+    grid-area: text;
+  }
+
   .layout-home .hero-photo {
+    grid-area: photo;
     width: 320px;
     height: 274px;
     justify-self: end;
+  }
+
+  .layout-home .hero-tech-focus {
+    grid-area: tech;
   }
 }
 
 @media (max-width: 768px) {
   .layout-home .hero-layout {
-    display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "text"
+      "photo"
+      "tech";
     gap: 1rem;
   }
 
+  .layout-home .hero-text {
+    grid-area: text;
+  }
+
   .layout-home .hero-photo {
+    grid-area: photo;
     width: 100%;
     max-width: 320px;
     height: 274px;
     margin-inline: auto;
+  }
+
+  .layout-home .hero-tech-focus {
+    grid-area: tech;
   }
 }
 
@@ -165,7 +189,7 @@ footer {
 }
 
 .hero-tech-focus {
-  margin-top: 1.25rem;
+  margin-top: 0;
 }
 
 .hero-tech-title {
