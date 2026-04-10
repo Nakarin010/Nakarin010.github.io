@@ -118,17 +118,51 @@ footer {
   padding: 3.5rem 0 2.75rem;
 }
 
-/* Home: pull hero + Tech focus up; sections already ordered hero → tech → blog */
+/* Home: tight vertical rhythm; hero image was stretching the row and center() piled whitespace */
 .layout-home {
-  padding-top: 1.35rem;
+  padding-top: 0.5rem;
 }
 
 .layout-home .hero {
-  padding: 1rem 0 1.5rem;
+  padding: 0.35rem 0 1rem;
 }
 
-.layout-home .hero + section .section-title {
+.layout-home .hero-layout {
+  align-items: start;
+  gap: 1.35rem;
+}
+
+/* Portrait was dictating row height; cap image so Tech focus sits closer below */
+.layout-home .hero-photo img {
+  max-height: min(360px, 52vh);
+  width: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.section-tech-focus .section-title {
   margin-top: 0;
+  font-size: 1.12rem;
+  margin-bottom: 0.45rem;
+}
+
+.tech-grid--compact {
+  gap: 0.65rem;
+}
+
+.layout-home .section-tech-focus .tech-card {
+  padding: 0.65rem 0.75rem;
+}
+
+.layout-home .section-tech-focus .tech-card h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.15rem;
+}
+
+.layout-home .section-tech-focus .tech-card span {
+  font-size: 0.86rem;
+  margin-top: 0.2rem;
+  line-height: 1.45;
 }
 
 .hero-layout {
