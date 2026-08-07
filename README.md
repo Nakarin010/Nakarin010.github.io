@@ -6,12 +6,14 @@ This is a framework-free static portfolio designed to work on both `https://naka
 
 Open `index.html` directly, or serve the repository folder:
 
+<!-- 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit <http://localhost:8000>.
 
+Then visit <http://localhost:8000>.
+-->
 ## Structure
 
 - `index.html` — focused homepage with identity, contact, and portrait reveal.
@@ -21,7 +23,6 @@ Then visit <http://localhost:8000>.
 - `js/main.js` — mobile navigation and portrait interaction.
 - `CNAME` — GitHub Pages custom-domain configuration for `nakarinph.com`.
 
-Search for `TODO (user)` comments to add your final bio, contact links, project copy, and proof.
 
 ## GitHub Pages domain setup
 
