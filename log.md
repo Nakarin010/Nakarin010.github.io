@@ -1,5 +1,11 @@
 # Progress log
 
+## 2026-08-07 — Contact and typography cleanup
+
+- Removed the contact-panel heading and supporting text, then centered Email, LinkedIn, and GitHub.
+- Removed the green location/status dot.
+- Reduced the mobile name scale and protected the surname from wrapping so “Phoorahong” remains fully visible.
+
 ## 2026-08-07 — Portrait reveal refinement
 
 - Changed the portrait’s initial state to a heavily blurred full-image preview.

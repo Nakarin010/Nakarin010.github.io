@@ -181,6 +181,7 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
 
 .hero-copy h1 span {
   display: block;
+  white-space: nowrap;
   color: transparent;
   background: linear-gradient(100deg, #18181c 8%, #756a91 48%, #c38ca7 90%);
   background-clip: text;
@@ -232,14 +233,6 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
   margin-top: 2rem;
   color: #8a8790;
   font-size: 0.8rem;
-}
-
-.status-dot {
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 50%;
-  background: #9bd7b0;
-  box-shadow: 0 0 0 5px rgba(155, 215, 176, 0.14);
 }
 
 .portrait-figure { margin: 0; text-align: center; }
@@ -381,19 +374,15 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
 .portrait-figure figcaption { margin-top: 0.85rem; color: #898590; font-size: 0.78rem; }
 
 .contact-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 2rem;
-  align-items: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
   padding: 2rem clamp(1.5rem, 5vw, 3.5rem);
   border-radius: var(--radius-md);
 }
 
-.contact-panel .eyebrow { margin-bottom: 0.7rem; }
-.contact-panel h2 { margin-bottom: 0.7rem; font-size: clamp(1.8rem, 3vw, 2.8rem); }
-.contact-panel p:not(.eyebrow) { max-width: 580px; margin-bottom: 0; color: var(--muted); }
-.contact-links { justify-content: flex-end; }
+.contact-links { justify-content: center; }
 .contact-link { padding: 0.5rem 0; border-bottom: 1px solid var(--line-strong); font-size: 0.88rem; font-weight: 700; }
 .contact-link:hover { border-color: var(--ink); }
 
@@ -432,8 +421,7 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
   .hero-copy { min-height: auto; }
   .portrait-figure { order: 2; }
   .portrait-reveal { margin: 0 auto; }
-  .contact-panel { grid-template-columns: 1fr; align-items: start; }
-  .contact-links { justify-content: flex-start; }
+  .contact-links { justify-content: center; }
   .projects-grid { grid-template-columns: 1fr; }
 }
 
@@ -446,11 +434,11 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
   .navbar-links a { justify-content: space-between; padding: 0.75rem 0.85rem; }
   .site-main { width: min(calc(100% - 1.4rem), var(--page-width)); padding-bottom: 4rem; }
   .hero-copy { padding: 1.5rem; border-radius: 1.5rem; }
-  .hero-copy h1 { font-size: clamp(3rem, 15vw, 4.4rem); }
+  .hero-copy h1 { font-size: clamp(2.55rem, 13vw, 4.1rem); }
   .hero-actions .button { flex: 1 1 auto; justify-content: center; }
   .portrait-reveal { width: 320px; height: 420px; }
   .contact-panel { padding: 1.5rem; border-radius: 1.5rem; }
-  .contact-links { align-items: flex-start; flex-direction: column; }
+  .contact-links { justify-content: center; }
   .project-card { min-height: auto; padding: 1.5rem; }
   .project-card-topline { margin-bottom: 2.5rem; }
 }
