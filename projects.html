@@ -1,116 +1,80 @@
 <!DOCTYPE html>
+<!--
+  How to run: open projects.html directly or serve this folder with any static web server.
+  How it works: this page is the project index; each verified project can link to a
+  stable detail page inside the projects/ directory.
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by Nakarin Phoorahong - AI developer.">
-    <title>Projects | Nakarin Phoorahong</title>
+    <meta name="description" content="Projects by Nakarin Phoorahong.">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://nakarinph.com/projects.html">
+    <title>Projects — Nakarin Phoorahong</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Nakarin</a>
-            <ul class="navbar-links">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="Nakarin home">
+                <span class="brand-mark">N</span>
+                <span>Nakarin</span>
+            </a>
+            <button class="navbar-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links" id="primary-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="projects.html">Projects</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="https://github.com/Nakarin010" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a class="active" href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="https://github.com/Nakarin010" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
             </ul>
-            <div class="navbar-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main class="container">
-        <header class="projects-header">
-            <h1>Selected work</h1>
-            <p>Straightforward summaries of the projects I am most proud of.</p>
+    <main class="site-main projects-page">
+        <header class="page-heading">
+            <p class="eyebrow">Selected work</p>
+            <h1>Things I’m building, testing, and learning from.</h1>
+            <!-- TODO (user): Replace this project-index introduction if desired. -->
+            <p>TODO: Add a short sentence that explains how you choose and describe your projects.</p>
         </header>
 
-        <section class="projects-grid">
-            <article class="project-card">
-                <h3>Dermalytix Active</h3>
-                <p>Dermatology diagnostics assistance built for remote healthcare teams.</p>
-                <div class="project-tech">
-                    <span>Python</span><span>TensorFlow</span><span>OpenCV</span>
+        <section class="projects-grid" aria-label="Project list">
+            <article class="project-card glass-panel">
+                <div class="project-card-topline">
+                    <span class="project-number">01</span>
+                    <span class="project-status">Senior project</span>
+                </div>
+                <h2>Dermalytix Active</h2>
+                <!-- TODO (user): Confirm or replace this project description. -->
+                <p>TODO: Add a concise explanation of the problem, your contribution, and the outcome.</p>
+                <div class="project-tags" aria-label="Technology tags">
+                    <!-- TODO (user): Replace these tags with the confirmed stack. -->
+                    <span>TODO: Tech</span><span>TODO: Tech</span><span>TODO: Tech</span>
                 </div>
                 <div class="project-actions">
-                    <a class="btn btn-secondary" href="https://github.com/ChawanakornI/SeniorProjectAl" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <button class="btn btn-primary btn-deep-dive" data-project="dermalytix-active">Details</button>
+                    <a class="button button-primary" href="projects/dermalytix-active.html">View details <span aria-hidden="true">↗</span></a>
+                    <a class="button button-quiet" href="https://github.com/ChawanakornI/SeniorProjectAl" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </article>
 
-            <article class="project-card">
-                <h3>QuantFlow</h3>
-                <p>Backtesting toolkit for quickly vetting algorithmic trading ideas.</p>
-                <div class="project-tech">
-                    <span>Python</span><span>Pandas</span><span>SQL</span>
+            <!-- TODO (user): Duplicate a project card and add its detail page under projects/. -->
+            <article class="project-card project-card-placeholder glass-panel">
+                <div class="project-card-topline">
+                    <span class="project-number">02</span>
+                    <span class="project-status">Coming next</span>
                 </div>
-                <div class="project-actions">
-                    <a class="btn btn-secondary" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <button class="btn btn-primary btn-deep-dive" data-project="quantflow">Details</button>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <h3>MediScan</h3>
-                <p>Deep learning pipeline for segmenting and highlighting medical images.</p>
-                <div class="project-tech">
-                    <span>PyTorch</span><span>SAM</span><span>YOLO</span>
-                </div>
-                <div class="project-actions">
-                    <a class="btn btn-secondary" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <button class="btn btn-primary btn-deep-dive" data-project="mediscan">Details</button>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <h3>MarketPulse</h3>
-                <p>Dashboard that gathers and scores real-time market sentiment signals.</p>
-                <div class="project-tech">
-                    <span>Python</span><span>Power BI</span><span>NLP</span>
-                </div>
-                <div class="project-actions">
-                    <a class="btn btn-secondary" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <button class="btn btn-primary btn-deep-dive" data-project="marketpulse">Details</button>
-                </div>
+                <h2>TODO: Add project name</h2>
+                <p>TODO: Add the short project description and link this card to its detail page.</p>
+                <div class="project-tags"><span>TODO: Stack</span><span>TODO: Stack</span></div>
+                <div class="project-actions"><a class="button button-quiet" href="#" aria-label="TODO: Add project detail URL">Add project details ↗</a></div>
             </article>
         </section>
     </main>
 
-    <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-header">
-                <button class="modal-close" aria-label="Close">&times;</button>
-                <h2 class="modal-title">Project Title</h2>
-                <p class="modal-tagline">Project tagline goes here</p>
-            </div>
-            <div class="modal-body">
-                <section>
-                    <h3 class="modal-section-title">Summary</h3>
-                    <p class="modal-summary">Loading...</p>
-                </section>
-                <section>
-                    <h3 class="modal-section-title">Key metrics</h3>
-                    <div class="modal-metrics"></div>
-                </section>
-                <section>
-                    <h3 class="modal-section-title">Tech stack</h3>
-                    <div class="modal-tech-stack"></div>
-                </section>
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-primary btn-github" href="#" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2026 Nakarin Phoorahong</p>
+    <footer class="site-footer">
+        <p>© 2026 Nakarin Phoorahong · <a href="https://nakarinph.com">nakarinph.com</a></p>
     </footer>
 
     <script src="js/main.js"></script>
