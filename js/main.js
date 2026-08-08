@@ -27,14 +27,14 @@ if (portraitReveal) {
   const revealedLabel = portraitReveal.querySelector('.portrait-label-revealed');
 
   portraitReveal.addEventListener('click', () => {
-    const isRevealed = portraitReveal.classList.toggle('is-revealed');
-    portraitReveal.setAttribute('aria-pressed', String(isRevealed));
-    portraitReveal.setAttribute(
-      'aria-label',
-      isRevealed ? 'Blur portrait again' : 'Reveal clear portrait',
-    );
+    if (portraitReveal.classList.contains('is-revealed')) return;
 
-    if (defaultLabel) defaultLabel.hidden = isRevealed;
-    if (revealedLabel) revealedLabel.hidden = !isRevealed;
+    portraitReveal.classList.add('is-revealed');
+    portraitReveal.setAttribute('aria-pressed', 'true');
+    portraitReveal.setAttribute('aria-label', 'Portrait revealed');
+    portraitReveal.disabled = true;
+
+    if (defaultLabel) defaultLabel.hidden = true;
+    if (revealedLabel) revealedLabel.hidden = false;
   });
 }

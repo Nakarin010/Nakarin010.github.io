@@ -265,13 +265,14 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
   transition: box-shadow 250ms ease, transform 250ms ease;
 }
 
-.portrait-reveal:hover .portrait-image-shell,
-.portrait-reveal:focus-visible .portrait-image-shell {
+.portrait-reveal:not(:disabled):hover .portrait-image-shell,
+.portrait-reveal:not(:disabled):focus-visible .portrait-image-shell {
   transform: translateY(-5px);
   box-shadow: 0 35px 90px rgba(77, 53, 97, 0.26);
 }
 
 .portrait-reveal:focus-visible { outline: 3px solid rgba(143, 110, 205, 0.5); outline-offset: 6px; }
+.portrait-reveal:disabled { cursor: default; }
 
 .portrait-image-shell img {
   width: 100%;
