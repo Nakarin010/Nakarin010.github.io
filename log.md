@@ -1,5 +1,9 @@
 # Progress log
 
+## 2026-08-10 21:13 +07 — Resume cache refresh
+
+- Added a version query to the Resume URL so visitors receive the updated R2 `inline` response while the prior cached URL expires or is purged.
+
 ## 2026-08-10 21:07 +07 — Resume preview link
 
 - Updated the Resume contact link to open in a new browser tab for in-browser PDF preview.
