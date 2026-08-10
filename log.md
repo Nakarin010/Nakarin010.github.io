@@ -1,5 +1,11 @@
 # Progress log
 
+## 2026-08-10 21:07 +07 — Resume preview link
+
+- Updated the Resume contact link to open in a new browser tab for in-browser PDF preview.
+- Corrected the Resume icon markup and removed the HTML download instruction.
+- Documented the required R2 response metadata for preview behavior.
+
 ## 2026-08-08 — Portrait reveal flow simplified
 
 - Made the portrait reveal one-way: the initial blurred preview reveals permanently after the first tap.
