@@ -1,5 +1,10 @@
 # Progress log
 
+## 2026-08-10 21:20 +07 — Project card placeholders expanded
+
+- Added project cards 03–06 using the existing card component structure.
+- Included status, description, technology tags, and detail-action placeholders in each new card.
+
 ## 2026-08-10 21:13 +07 — Resume cache refresh
 
 - Added a version query to the Resume URL so visitors receive the updated R2 `inline` response while the prior cached URL expires or is purged.
