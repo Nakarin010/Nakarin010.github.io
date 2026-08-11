@@ -1,11 +1,11 @@
 # Nakarin Phoorahong portfolio
 
 This is a framework-free static portfolio designed to work on both `https://nakarinph.com` and the repository’s GitHub Pages URL.
-
+<!--
 ## Run locally
 
 Open `index.html` directly, or serve the repository folder:
-
+-->
 <!-- 
 ```bash
 python3 -m http.server 8000
@@ -24,6 +24,7 @@ Then visit <http://localhost:8000>.
 - `CNAME` — GitHub Pages custom-domain configuration for `nakarinph.com`.
 
 The Resume contact link opens the PDF in the visitor's browser viewer. The R2 object must serve `Content-Type: application/pdf` and `Content-Disposition: inline` for preview behavior.
+
 
 
 ## GitHub Pages domain setup
