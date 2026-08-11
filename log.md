@@ -1,5 +1,28 @@
 # Progress log
 
+## 2026-08-11 20:45 +07 — Mobile surname visibility
+
+- Reduced the mobile homepage-name scale so the unbroken “Phoorahong” surname, including its final “g”, fits inside the hero card.
+
+## 2026-08-11 20:40 +07 — Project-detail action styling
+
+- Applied the black primary-button style to every project-details action on the project cards.
+
+## 2026-08-11 20:37 +07 — Project-card GitHub actions
+
+- Added a GitHub action beside the detail action on project cards 03–06, matching the first card’s cover layout.
+- Marked those new GitHub URLs as TODO placeholders until their repositories are available.
+
+## 2026-08-11 20:28 +07 — Project detail templates
+
+- Added dedicated TODO detail templates for project cards 02–06.
+- Connected every project card to its corresponding detail page while retaining the existing Dermalytix page for card 01.
+
+## 2026-08-11 20:21 +07 — Notebook project-heading wrap
+
+- Widened the project-page heading measure so “building, testing” stays on the same line at notebook viewport widths.
+- Kept the existing small-screen typography breakpoint unchanged.
+
 ## 2026-08-10 21:20 +07 — Project card placeholders expanded
 
 - Added project cards 03–06 using the existing card component structure.

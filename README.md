@@ -23,7 +23,7 @@ Then visit <http://localhost:8000>.
 - `js/main.js` — mobile navigation and portrait interaction.
 - `CNAME` — GitHub Pages custom-domain configuration for `nakarinph.com`.
 
-The project index currently includes six cards: two populated project entries and four ready-to-fill placeholder cards.
+The project index currently includes six cards: two populated project entries and four ready-to-fill placeholder cards. Every card now links to its own detail page and includes its GitHub action in the card cover; cards 02–06 use TODO templates until their project information is ready. Its heading expands on notebook-sized screens so the opening phrase wraps naturally.
 
 The Resume contact link opens the PDF in the visitor's browser viewer. The R2 object must serve `Content-Type: application/pdf` and `Content-Disposition: inline` for preview behavior.
 

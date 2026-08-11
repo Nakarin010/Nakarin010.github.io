@@ -387,7 +387,7 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
 .contact-link { padding: 0.5rem 0; border-bottom: 1px solid var(--line-strong); font-size: 0.88rem; font-weight: 700; }
 .contact-link:hover { border-color: var(--ink); }
 
-.page-heading { max-width: 720px; margin-bottom: 3rem; }
+.page-heading { max-width: 970px; margin-bottom: 3rem; }
 .page-heading h1 { margin-bottom: 1rem; font-size: clamp(2.8rem, 6vw, 5.4rem); }
 .page-heading > p:last-child { max-width: 580px; color: var(--muted); font-size: 1.05rem; }
 
@@ -435,7 +435,7 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
   .navbar-links a { justify-content: space-between; padding: 0.75rem 0.85rem; }
   .site-main { width: min(calc(100% - 1.4rem), var(--page-width)); padding-bottom: 4rem; }
   .hero-copy { padding: 1.5rem; border-radius: 1.5rem; }
-  .hero-copy h1 { font-size: clamp(2.55rem, 13vw, 4.1rem); }
+  .hero-copy h1 { font-size: clamp(2rem, 10vw, 3.2rem); }
   .hero-actions .button { flex: 1 1 auto; justify-content: center; }
   .portrait-reveal { width: 320px; height: 420px; }
   .contact-panel { padding: 1.5rem; border-radius: 1.5rem; }
