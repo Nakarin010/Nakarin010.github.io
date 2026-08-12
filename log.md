@@ -1,5 +1,15 @@
 # Progress log
 
+## 2026-08-12 08:35 +07 — Responsive project intro copy
+
+- Removed the fixed 580px width cap from the project-page supporting copy so short trailing words no longer wrap while notebook-width space remains available.
+- Kept wrapping viewport-driven for consistent notebook and mobile presentation.
+
+## 2026-08-12 06:40 +07 — Reusable R2 project galleries
+
+- Added a consistent two-rectangle screenshot gallery to every project-detail page.
+- Each gallery uses editable `cdn.nakarinph.com/projects/` R2 image URLs, opens images full-size, and stacks cleanly on small screens.
+
 ## 2026-08-11 20:45 +07 — Mobile surname visibility
 
 - Reduced the mobile homepage-name scale so the unbroken “Phoorahong” surname, including its final “g”, fits inside the hero card.
