@@ -27,7 +27,7 @@ The project index currently includes six cards: two populated project entries an
 
 The Resume contact link opens the PDF in the visitor's browser viewer. The R2 object must serve `Content-Type: application/pdf` and `Content-Disposition: inline` for preview behavior.
 
-Each project-detail page includes a two-rectangle proof gallery. Upload screenshots to the matching `https://cdn.nakarinph.com/projects/<project>-01.webp` and `-02.webp` R2 object URLs; each rectangle opens its full-size image in a new tab.
+Each project-detail page includes a responsive proof gallery. Upload screenshots to the matching `https://cdn.nakarinph.com/projects/<project>-01.webp` and `-02.webp` R2 object URLs; each image opens full-size in a new tab. Portrait screenshots are detected from their intrinsic dimensions, centered, and constrained to a phone-friendly width. Landscape and square screenshots use the full gallery width. Images retain their original aspect ratio without cropping.
 
 
 

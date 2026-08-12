@@ -1,5 +1,5 @@
 // How to run: this file is loaded by the HTML pages; open a page directly or use any static server.
-// How it works: it controls the mobile menu and toggles the portrait's reversible rainbow state.
+// How it works: it controls the mobile menu, portrait reveal, and screenshot gallery sizing.
 
 const navToggle = document.querySelector('.navbar-toggle');
 const navLinks = document.querySelector('.navbar-links');
@@ -38,3 +38,19 @@ if (portraitReveal) {
     if (revealedLabel) revealedLabel.hidden = false;
   });
 }
+
+document.querySelectorAll('.project-proof-image img').forEach((image) => {
+  const classifyScreenshot = () => {
+    const frame = image.closest('.project-proof-image');
+
+    if (!frame || !image.naturalWidth || !image.naturalHeight) return;
+
+    frame.classList.toggle('is-portrait', image.naturalHeight > image.naturalWidth);
+  };
+
+  if (image.complete) {
+    classifyScreenshot();
+  } else {
+    image.addEventListener('load', classifyScreenshot, { once: true });
+  }
+});

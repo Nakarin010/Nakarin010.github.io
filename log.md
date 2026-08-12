@@ -1,5 +1,10 @@
 # Progress log
 
+## 2026-08-12 13:46 +07 — Orientation-aware project screenshots
+
+- Removed the fixed 4:3 crop from project-detail proof images so screenshots retain their original aspect ratios.
+- Added automatic portrait detection: mobile screenshots are centered at a constrained width while desktop screenshots use the full gallery width.
+
 ## 2026-08-12 08:35 +07 — Responsive project intro copy
 
 - Removed the fixed 580px width cap from the project-page supporting copy so short trailing words no longer wrap while notebook-width space remains available.
