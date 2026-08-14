@@ -1,9 +1,5 @@
-
-SITE_REVIEW.md
-SITE-LOADING-DIAGNOSIS.md
+tmp/
 js/home-layout-debug.js
 output/playwright
-d38ff89371.pdf
-82b2e3b197.jpg
 
 .cursor/hooks/state/continual-learning.json
