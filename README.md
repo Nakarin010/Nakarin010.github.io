@@ -5,7 +5,7 @@ This is a framework-free static portfolio designed to work on both `https://naka
 ## Structure
 
 - `index.html` — focused homepage with identity, contact, and portrait reveal.
-- `card.html` — dedicated dark virtual business card page with a clickable front/back flip, paper texture, and LinkedIn/GitHub links on the back.
+- `card.html` — dedicated dark virtual business card page with a clickable front/back flip, matte charcoal page texture, bone paper card texture, “WORK” monogram label, and LinkedIn/GitHub links on the back.
 - `projects.html` — project index.
 - `projects/` — stable project detail pages.
 - `css/style.css` — white spectral-glass visual system and responsive layout.

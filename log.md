@@ -1,5 +1,50 @@
 # Progress log
 
+## 2026-08-21 22:02 +07 — Lifted reverse identity lockup
+
+- Moved the upside-down name and title upward so both stay inside the card’s inner border.
+- Preserved a clear gap between the name and title.
+- Verification: browser render shows an 8.9px clearance to the inner border and a 6.8px name/title gap; keyboard flip-back passed with zero browser console errors.
+
+## 2026-08-21 21:55 +07 — Removed front-face WORK label
+
+- Removed the WORK label from the front of the virtual card as requested.
+- Removed the unused WORK label styling while preserving the centered N and reverse-face layout.
+- Verification: front text no longer contains WORK; keyboard flip to the back and back to the front passed with zero browser console errors.
+
+## 2026-08-21 21:48 +07 — Refined flipped card alignment
+
+- Centered the flipped N vertically within the back face.
+- Increased the separation between the upside-down name and title so they no longer overlap.
+- Verification: browser render shows the N centered with an 8.7px name/title gap; Enter flips back to the front and browser console errors remain at zero.
+
+## 2026-08-21 21:35 +07 — Selected matte background
+
+- Built the selected first background direction as a background-only matte charcoal asset with a soft center lift and darker edges.
+- Replaced the marble page background while keeping the interactive bone card and Image 1 reverse-face treatment unchanged.
+- Updated README and design QA to reflect the selected visual direction.
+- Verification: selected matte asset inspected; front/back browser renders, keyboard flip-back, contact hrefs, and zero browser console errors verified.
+
+## 2026-08-21 21:30 +07 — Image 1 reverse-face treatment
+
+- Added non-interactive upside-down identity echoes to the flipped card face: site, N monogram, name, and role.
+- Kept the readable contact details and flip hint on the left side of the reverse face, matching the supplied reference.
+- Left the marble background unchanged while presenting three generated replacement directions for user selection.
+- Verification: in-app browser click test showed `is-flipped`, hid the front, revealed the back, and visually confirmed the restored composition.
+
+## 2026-08-21 21:11 +07 — WORK label correction
+
+- Corrected the card-front label from the mistaken “WORK CRASH” wording to “WORK”.
+- Added positive spacing beneath the N monogram so WORK cannot collide with it.
+- Verification: final desktop render inspected; only WORK is visible and the marble background remains intact; `git diff --check` passed.
+
+## 2026-08-21 21:06 +07 — Marble background and WORK label
+
+- Added a generated black marble background with restrained horizontal veins to the dedicated A card page.
+- Added the exact “WORK” label beneath the N monogram on the card front, with extra separation to avoid a collision.
+- Updated the README and design QA record with the new visual assets and evidence.
+- Verification: desktop and mobile renders inspected; 390px viewport showed no horizontal overflow; flip, keyboard, and LinkedIn/GitHub link behavior passed in the browser test; `node --check js/main.js` and `git diff --check` passed.
+
 ## 2026-08-21 19:52 +07 — Texture and link verification
 
 - Verified the rough paper texture in the rendered card.
