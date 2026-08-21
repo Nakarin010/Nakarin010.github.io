@@ -1,5 +1,11 @@
 # Progress log
 
+## 2026-08-21 22:18 +07 — Protected back-face alignment
+
+- Constrained the reverse heading to a left-side column so it cannot collide with the centered N.
+- Lifted the upside-down name slightly and disabled the page-specific hover lift so the card remains centered during inspection.
+- Verification: local back-face render reports zero heading/N or name/title overlap; card and stage centers match; keyboard flip-back passed with zero browser console errors.
+
 ## 2026-08-21 22:02 +07 — Lifted reverse identity lockup
 
 - Moved the upside-down name and title upward so both stay inside the card’s inner border.
