@@ -1,5 +1,44 @@
 # Progress log
 
+## 2026-08-21 19:52 +07 — Texture and link verification
+
+- Verified the rough paper texture in the rendered card.
+- Verified LinkedIn and GitHub hrefs, new-tab targets, click isolation, and keyboard flip behavior.
+- Verification: design QA passed with no actionable P0/P1/P2 findings.
+
+## 2026-08-21 19:42 +07 — Card texture and contact links
+
+- Added a generated bone-paper texture asset to the card faces for a subtle rough-stock finish.
+- Added real LinkedIn and GitHub anchors to the back face.
+- Preserved card flipping while allowing link clicks to navigate without toggling the card.
+- Verification: final rendered-browser checks recorded in the later QA entry.
+
+## 2026-08-21 19:34 +07 — Dedicated card final verification
+
+- Verified the full-black desktop page, active “A card” navbar state, responsive mobile dimensions, and settled back-face screenshot.
+- Verified click behavior on the dedicated page: front → back → front.
+- Verification: design QA passed with no actionable P0/P1/P2 findings.
+
+## 2026-08-21 19:25 +07 — Dedicated A card page
+
+- Moved the virtual business card out of the homepage into a dedicated `card.html` page.
+- Added an “A card” link to the primary navigation across the homepage, projects index, and project detail pages.
+- Changed the card page to a full black gallery treatment while preserving the click-only front/back interaction.
+- Verification: initial desktop render checked; final responsive and interaction checks recorded in the later QA entry.
+
+## 2026-08-21 19:18 +07 — Card visual QA refinement
+
+- Increased the card height and refined the mobile heading wrap after rendered screenshot review.
+- Added the final design QA report for the desktop, mobile, and back-face states.
+- Verification: focused back-state screenshot reviewed; front → back → front interaction rechecked successfully.
+
+## 2026-08-21 19:07 +07 — Virtual business card
+
+- Added a dark-gallery virtual business card section to the homepage using the existing light spectral-glass system around it.
+- Added a single-card front/back interaction that flips only after click or tap and can be toggled back from either state.
+- Updated homepage documentation for the new card interaction.
+- Verification: rendered desktop and mobile screenshots checked; front → back → front click behavior verified in a headless browser; syntax and whitespace checks passed.
+
 ## 2026-08-12 13:46 +07 — Orientation-aware project screenshots
 
 - Removed the fixed 4:3 crop from project-detail proof images so screenshots retain their original aspect ratios.

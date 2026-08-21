@@ -1,5 +1,5 @@
 // How to run: this file is loaded by the HTML pages; open a page directly or use any static server.
-// How it works: it controls the mobile menu, portrait reveal, and screenshot gallery sizing.
+// How it works: it controls the mobile menu, portrait reveal, business card flip/links, and screenshot gallery sizing.
 
 const navToggle = document.querySelector('.navbar-toggle');
 const navLinks = document.querySelector('.navbar-links');
@@ -36,6 +36,38 @@ if (portraitReveal) {
 
     if (defaultLabel) defaultLabel.hidden = true;
     if (revealedLabel) revealedLabel.hidden = false;
+  });
+}
+
+const businessCard = document.querySelector('.business-card');
+
+if (businessCard) {
+  const frontFace = businessCard.querySelector('.business-card-front');
+  const backFace = businessCard.querySelector('.business-card-back');
+
+  const setCardFace = (isFlipped) => {
+    businessCard.classList.toggle('is-flipped', isFlipped);
+    businessCard.setAttribute('aria-label', isFlipped ? 'Virtual business card showing contact links. Press Enter or Space to flip to the front.' : 'Virtual business card showing the front. Press Enter or Space to flip to the back.');
+
+    if (frontFace) frontFace.setAttribute('aria-hidden', String(isFlipped));
+    if (backFace) backFace.setAttribute('aria-hidden', String(!isFlipped));
+  };
+
+  const toggleCard = () => {
+    setCardFace(!businessCard.classList.contains('is-flipped'));
+  };
+
+  businessCard.addEventListener('click', (event) => {
+    if (event.target.closest('a')) return;
+    toggleCard();
+  });
+
+  businessCard.addEventListener('keydown', (event) => {
+    if (event.target.closest('a')) return;
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+
+    event.preventDefault();
+    toggleCard();
   });
 }
 

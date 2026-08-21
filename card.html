@@ -1,0 +1,99 @@
+<!doctype html>
+<!--
+  How to run: open card.html directly or serve this folder with any static web server.
+  How it works: presents the bone-colored virtual business card and flips it between front and back on click or tap.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A virtual business card!"
+    />
+    <link rel="canonical" href="https://nakarinph.com/card.html" />
+    <meta name="theme-color" content="#101014" />
+    <title>Virtual Bizness CARD!</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="card-page">
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Nakarin home">
+          <span class="brand-mark">N</span>
+          <span>Nakarin</span>
+        </a>
+        <button
+          class="navbar-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="navbar-links" id="primary-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="card.html" aria-current="page">A card</a></li>
+          <li>
+            <a
+              href="https://github.com/Nakarin010"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-main card-page-main">
+      <section class="card-page-hero" aria-labelledby="card-page-heading">
+        <div class="card-page-heading">
+          <p class="eyebrow">A digital calling card</p>
+          <h1 id="card-page-heading">The Bateman Card</h1>
+          <p>Just Click it.</p>
+        </div>
+
+        <div class="business-card-stage">
+          <div
+            class="business-card"
+            role="group"
+            tabindex="0"
+            aria-label="Virtual business card. Press Enter or Space to flip."
+          >
+            <span class="business-card-inner">
+              <span class="business-card-face business-card-front" aria-hidden="false">
+                <span class="business-card-site">NAKARINPH.COM</span>
+                <span class="business-card-monogram" aria-hidden="true">N</span>
+                <span class="business-card-name">Nakarin<br />Phoorahong</span>
+                <span class="business-card-role">AI developer</span>
+                <!--  <span class="business-card-hint">Click to flip <span aria-hidden="true">↻</span></span>
+                -->
+
+                  </span>
+
+              <span class="business-card-face business-card-back" aria-hidden="true">
+                <span class="business-card-back-heading">Available for<br />interesting work.</span>
+                <span class="business-card-details">
+                  <span>contactme@nakarinph.com</span>
+                  <a href="https://www.linkedin.com/in/nakarin-phoorahong/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/Nakarin010" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                  <span>Bangkok / Thailand</span>
+                </span>
+                <span class="business-card-hint">Click to flip back <span aria-hidden="true">↻</span></span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Nakarin Phoorahong · <a href="https://nakarinph.com">nakarinph.com</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
