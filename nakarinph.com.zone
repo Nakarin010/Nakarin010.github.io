@@ -1,0 +1,34 @@
+; BIND zone template for nakarinph.com
+; Replace the NS names below with the authoritative nameservers
+; assigned by your DNS provider before importing this zone.
+; Preserve any existing MX/TXT records used for email or verification.
+
+$ORIGIN nakarinph.com.
+$TTL 3600
+
+@   IN SOA ns1.YOUR-DNS-PROVIDER.example. hostmaster.nakarinph.com. (
+        2026082201 ; serial: increment whenever this zone changes
+        3600       ; refresh
+        900        ; retry
+        1209600    ; expire
+        3600       ; negative caching TTL
+)
+
+; Replace these with your provider's actual authoritative nameservers.
+@   IN NS ns1.YOUR-DNS-PROVIDER.example.
+@   IN NS ns2.YOUR-DNS-PROVIDER.example.
+
+; GitHub Pages apex records.
+@   IN A 185.199.108.153
+@   IN A 185.199.109.153
+@   IN A 185.199.110.153
+@   IN A 185.199.111.153
+
+; Optional GitHub Pages IPv6 records.
+@   IN AAAA 2606:50c0:8000::153
+@   IN AAAA 2606:50c0:8001::153
+@   IN AAAA 2606:50c0:8002::153
+@   IN AAAA 2606:50c0:8003::153
+
+; GitHub Pages subdomain.
+www IN CNAME Nakarin010.github.io.

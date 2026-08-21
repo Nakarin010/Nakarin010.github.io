@@ -1,5 +1,11 @@
 # Progress log
 
+## 2026-08-22 00:42 +07 — Preserved final surname glyph
+
+- Let the gradient surname span size to its full text width so Safari cannot clip the final “g”.
+- Added a mobile fallback that keeps the surname within the responsive heading width.
+- Verification: HTML contains the complete `Phoorahong` string; `node --check js/main.js` and `git diff --check` passed. The local server remains stopped after a permission-blocked restart attempt.
+
 ## 2026-08-21 22:18 +07 — Protected back-face alignment
 
 - Constrained the reverse heading to a left-side column so it cannot collide with the centered N.

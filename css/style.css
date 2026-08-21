@@ -181,6 +181,7 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
 
 .hero-copy h1 span {
   display: block;
+  width: max-content;
   white-space: nowrap;
   color: transparent;
   background: linear-gradient(100deg, #18181c 8%, #756a91 48%, #c38ca7 90%);
@@ -590,6 +591,7 @@ h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
   .site-main { width: min(calc(100% - 1.4rem), var(--page-width)); padding-bottom: 4rem; }
   .hero-copy { padding: 1.5rem; border-radius: 1.5rem; }
   .hero-copy h1 { font-size: clamp(2rem, 10vw, 3.2rem); }
+  .hero-copy h1 span { width: auto; max-width: 100%; }
   .hero-actions .button { flex: 1 1 auto; justify-content: center; }
   .portrait-reveal { width: 320px; height: 420px; }
   .contact-panel { padding: 1.5rem; border-radius: 1.5rem; }

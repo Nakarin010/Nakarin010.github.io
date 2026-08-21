@@ -1,0 +1,13 @@
+; Cloudflare DNS import file for nakarinph.com
+; Restores the apex domain to GitHub Pages. No SOA or NS records are included:
+; Cloudflare manages those for a standard authoritative zone.
+; Do not add an assets.nakarinph.com record here. Attach that hostname in
+; Cloudflare R2 > bucket > Settings > Custom Domains after importing this file.
+
+$ORIGIN nakarinph.com.
+$TTL 3600
+
+@  IN  A  185.199.108.153
+@  IN  A  185.199.109.153
+@  IN  A  185.199.110.153
+@  IN  A  185.199.111.153
