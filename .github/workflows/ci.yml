@@ -1,0 +1,37 @@
+name: Static site CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    name: Static checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check required site files
+        run: |
+          test -f CNAME
+          test -f index.html
+          test -f projects.html
+          test -f card.html
+          test -f css/style.css
+          test -f js/main.js
+
+      - name: Check JavaScript syntax
+        run: node --check js/main.js
