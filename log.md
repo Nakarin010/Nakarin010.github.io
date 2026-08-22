@@ -1,5 +1,12 @@
 # Progress log
 
+## 2026-08-22 13:29 +07 — Stabilized mobile card layout and cache refresh
+
+- Added a mobile-only back-face layout that confines the heading, contact details, monogram, and mirrored name to separate areas of the card.
+- Disabled Safari’s automatic text-size adjustment on the card page and forced the reverse heading to preserve its intended two lines.
+- Versioned the card page’s CSS and JavaScript URLs so Safari requests the newly deployed assets instead of using the prior 10-minute GitHub Pages cache entry.
+- Verification: inspected the supplied iPhone recording, then rendered the front and flipped back face at a 391px mobile viewport and at a 1280px laptop viewport; each settled flip showed only its active face, with no overlap. `node --check js/main.js` and `git diff --check` passed.
+
 ## 2026-08-22 11:12 +07 — Prevented Safari face ghosting
 
 - Added a settled-state visibility guard so Safari cannot paint the inactive card face over the active face at high page zoom.
