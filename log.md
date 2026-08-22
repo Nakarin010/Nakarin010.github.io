@@ -1,5 +1,11 @@
 # Progress log
 
+## 2026-08-22 10:56 +07 — Fixed Safari back-face overlap
+
+- Replaced back-face rem-based typography with fixed card-relative sizing so enlarged Safari text settings cannot make the heading, N, name, and title collide.
+- Preserved the existing centered N and left-column heading treatment.
+- Verification: `node --check js/main.js` and `git diff --check` passed; rendered browser verification requires the local preview server to be restarted.
+
 ## 2026-08-22 00:42 +07 — Preserved final surname glyph
 
 - Let the gradient surname span size to its full text width so Safari cannot clip the final “g”.
