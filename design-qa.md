@@ -1,4 +1,4 @@
-# Design QA — Dedicated A card page
+# Design QA — Dedicated The card page
 
 ## Source visual truth
 
@@ -19,7 +19,7 @@
 
 ### Full view
 
-- The dedicated page remains fully black, with “A card” active in the navbar.
+- The dedicated page remains fully black, with “The card” active in the navbar.
 - The black page now uses the selected matte charcoal background with a soft center lift and darker edges, keeping the bone card as the focal point.
 - The bone card now has a subtle rough paper surface while retaining readable black typography.
 - The front pairs the N monogram with the exact label “WORK”, separated by a deliberate vertical gap.

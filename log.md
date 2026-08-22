@@ -78,7 +78,7 @@
 
 ## 2026-08-21 21:06 +07 — Marble background and WORK label
 
-- Added a generated black marble background with restrained horizontal veins to the dedicated A card page.
+- Added a generated black marble background with restrained horizontal veins to the dedicated The card page.
 - Added the exact “WORK” label beneath the N monogram on the card front, with extra separation to avoid a collision.
 - Updated the README and design QA record with the new visual assets and evidence.
 - Verification: desktop and mobile renders inspected; 390px viewport showed no horizontal overflow; flip, keyboard, and LinkedIn/GitHub link behavior passed in the browser test; `node --check js/main.js` and `git diff --check` passed.
@@ -98,14 +98,14 @@
 
 ## 2026-08-21 19:34 +07 — Dedicated card final verification
 
-- Verified the full-black desktop page, active “A card” navbar state, responsive mobile dimensions, and settled back-face screenshot.
+- Verified the full-black desktop page, active “The card” navbar state, responsive mobile dimensions, and settled back-face screenshot.
 - Verified click behavior on the dedicated page: front → back → front.
 - Verification: design QA passed with no actionable P0/P1/P2 findings.
 
-## 2026-08-21 19:25 +07 — Dedicated A card page
+## 2026-08-21 19:25 +07 — Dedicated The card page
 
 - Moved the virtual business card out of the homepage into a dedicated `card.html` page.
-- Added an “A card” link to the primary navigation across the homepage, projects index, and project detail pages.
+- Added an “The card” link to the primary navigation across the homepage, projects index, and project detail pages.
 - Changed the card page to a full black gallery treatment while preserving the click-only front/back interaction.
 - Verification: initial desktop render checked; final responsive and interaction checks recorded in the later QA entry.
 
