@@ -1,5 +1,12 @@
 # Progress log
 
+## 2026-08-22 14:27 +07 — Replaced Safari’s unstable 3D card flip
+
+- Replaced the 3D rotation with a two-phase edge-on card transition so exactly one face is visible at every point in the flip.
+- This removes the Safari/WebKit back-face paint artifact that was superimposing the front monogram and name over the back face.
+- Versioned the card CSS and JavaScript URLs again so Safari fetches this flip implementation immediately after the page refreshes.
+- Verification: mobile render after a complete flip shows the front face hidden and the back face visible, with no duplicate text or monogram; `node --check js/main.js` and `git diff --check` passed.
+
 ## 2026-08-22 13:29 +07 — Stabilized mobile card layout and cache refresh
 
 - Added a mobile-only back-face layout that confines the heading, contact details, monogram, and mirrored name to separate areas of the card.
