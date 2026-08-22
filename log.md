@@ -1,5 +1,11 @@
 # Progress log
 
+## 2026-08-22 11:12 +07 — Prevented Safari face ghosting
+
+- Added a settled-state visibility guard so Safari cannot paint the inactive card face over the active face at high page zoom.
+- Tightened the back heading and mirrored identity dimensions to keep every back-face element in its own visual zone.
+- Verification pending browser render and flip interaction pass.
+
 ## 2026-08-22 10:56 +07 — Fixed Safari back-face overlap
 
 - Replaced back-face rem-based typography with fixed card-relative sizing so enlarged Safari text settings cannot make the heading, N, name, and title collide.

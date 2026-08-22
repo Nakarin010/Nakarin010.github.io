@@ -44,13 +44,22 @@ const businessCard = document.querySelector('.business-card');
 if (businessCard) {
   const frontFace = businessCard.querySelector('.business-card-front');
   const backFace = businessCard.querySelector('.business-card-back');
+  let settleTimer;
+
+  businessCard.classList.add('is-settled');
 
   const setCardFace = (isFlipped) => {
+    window.clearTimeout(settleTimer);
+    businessCard.classList.remove('is-settled');
     businessCard.classList.toggle('is-flipped', isFlipped);
     businessCard.setAttribute('aria-label', isFlipped ? 'Virtual business card showing contact links. Press Enter or Space to flip to the front.' : 'Virtual business card showing the front. Press Enter or Space to flip to the back.');
 
     if (frontFace) frontFace.setAttribute('aria-hidden', String(isFlipped));
     if (backFace) backFace.setAttribute('aria-hidden', String(!isFlipped));
+
+    settleTimer = window.setTimeout(() => {
+      businessCard.classList.add('is-settled');
+    }, 720);
   };
 
   const toggleCard = () => {
