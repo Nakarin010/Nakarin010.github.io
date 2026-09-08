@@ -201,3 +201,15 @@
 - Retired the old blog route by redirecting it to the homepage.
 - Added `CNAME` and canonical metadata for `nakarinph.com`.
 - Added TODO markers for personal copy, links, project details, and proof.
+
+## 2026-09-08 13:46:49 +0700 — TOP SECRET identity dossier redesign
+
+- Implemented the isolated dossier design on the homepage, Mission Archive, and six case-file routes using new scoped CSS and progressive-enhancement JavaScript.
+- Added the fixed 320 × 420 identity portrait flow, mobile Tech focus order, featured records, grouped operations board, keyboard pull-chain lamp, folder focus behavior, and session-persistent mute/lamp state.
+- Generated an original Bangkok 2048 atmosphere with built-in imagegen after the configured CLI API account reported exhausted credits. Delivered the full 1944 × 809 image as a lossless WebP (1,623,716 bytes), verified pixel-identical to the source, honoring the user's maximum-quality preference.
+- Rewrote factual biography/project copy, normalized statuses and names, corrected canonical metadata, removed obsolete templates and four confirmed unavailable resource links, and improved seven screenshot descriptions from visible content.
+- Refined mobile board overflow, folder spacing, focus placement, and paper text contrast through screenshot review and independent browser QA.
+- Updated README and design-qa.md with behavior, image provenance, verification results, and limitations.
+- Verification: 32 initial browser views plus 24 opened dossiers across four viewport sizes passed with no overflow, JavaScript errors, failed resources, or remaining broken screenshots. Keyboard, focus, no-JavaScript access, reduced motion, session persistence, and interaction-only audio checks passed.
+- Frozen card verification: all three specified SHA-256 hashes match; five desktop/mobile before/after screenshots are byte-identical; click/Enter/Space/link/navigation behaviors pass.
+- Status: implemented locally; no production deployment performed. Chromium only; formal HTML5 validator unavailable. Existing frozen card mobile-menu contrast and unavailable TradingJournal evidence are documented.
