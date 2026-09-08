@@ -1,121 +1,94 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Project 04 placeholder by Nakarin Phoorahong."
-    />
-    <link
-      rel="canonical"
-      href="https://nakarinph.com/projects/project-04-placeholder.html"
-    />
-    <title>optionViz — Nakarin Phoorahong</title>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="optionVIZ by Nakarin Phoorahong. A website for visualizing publicly available options data stored in Cloudflare R2.">
+    <meta name="theme-color" content="#141719">
+    <link rel="canonical" href="https://nakarinph.com/projects/optionViz.html">
+    <title>optionVIZ — Case 04 — Nakarin Phoorahong</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dossier.css">
+</head>
+<body class="dossier-page case-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-      <nav class="navbar" aria-label="Primary navigation">
-        <a class="brand" href="../index.html" aria-label="Nakarin home"
-          ><span class="brand-mark">N</span><span>Nakarin</span></a
-        ><button
-          class="navbar-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-links"
-          aria-label="Open navigation"
-        >
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="navbar-links" id="primary-links">
-          <li><a href="../index.html">Home</a></li>
-          <li>
-            <a class="active" href="../projects.html" aria-current="page"
-              >Projects</a
-            >
-          </li>
-          <li><a href="../card.html">The card</a></li>
-          <li>
-            <a
-              href="https://github.com/Nakarin010"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub <span aria-hidden="true">↗</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="../index.html" aria-label="Nakarin archive home"><span class="brand-mark">N</span><span>/ ARCHIVE</span></a>
+            <button class="navbar-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation"><span></span><span></span><span></span></button>
+            <ul class="navbar-links" id="primary-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../projects.html">Mission Archive</a></li>
+                <li><a href="../card.html">The Card / Credential</a></li>
+                <li><a href="https://github.com/Nakarin010" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+            </ul>
+            <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false" aria-label="Mute interface sounds" hidden>Sound on</button>
+        </nav>
     </header>
-    <main class="site-main detail-page">
-      <a class="back-link" href="../projects.html">← Back to projects</a>
-      <section class="detail-hero glass-panel">
-        <p class="eyebrow">Project 04 · Ongoing</p>
-        <h1>optionViz</h1>
-        <p>
-          <!-- Visualization of publicly available option data in various metrics. -->
-          Visualization of publicly available option data
-        </p>
-        <div class="project-actions">
-          <a
-            class="button button-primary"
-            href="https://options-data.nakarinph.com"
-            aria-label="The website"
-            >Visit the website<span aria-hidden="true">↗</span></a
-          >
-        </div>
-      </section>
-      <div class="detail-body">
-        <!-- <section class="detail-block glass-panel">
-          <h2>What it does</h2>
-          <p>
-            
-          </p>
-        </section> -->
-        <section class="detail-block glass-panel">
-          <h2>My contribution</h2>
-          <p>
-            This project is built inspired by my curiosity in the options market
-            and how metrics can be used to analyze the market.
-          </p>
+
+    <main class="site-main detail-page" id="main-content">
+        <a class="back-link" href="../projects.html">← Back to Mission Archive</a>
+        <section class="case-cover" data-folder-cover aria-labelledby="case-title">
+            <div class="case-cover-topline">
+                <p class="eyebrow">Case 04 / Market Intelligence</p>
+                <span class="secret-stamp">TOP SECRET</span>
+            </div>
+            <p class="case-context">Personal project</p>
+            <h1 id="case-title">optionVIZ</h1>
+            <p class="case-mission">A website for visualizing publicly available options data stored in Cloudflare R2.</p>
+            <div class="case-cover-bottomline">
+                <span class="status">Ongoing</span>
+                <button class="button button-primary" type="button" data-folder-open aria-controls="case-dossier" aria-expanded="false" hidden>Open Case File <span aria-hidden="true">↗</span></button>
+            </div>
+            <span class="case-reference" aria-hidden="true">BKK-2048 / RECORD 04</span>
         </section>
-        <section class="detail-block glass-panel">
-          <h2>Stack and proof</h2>
-          <div
-            class="project-gallery"
-            aria-label="optionViz project screenshots"
-          >
-            <a
-              class="project-proof-image"
-              href="https://cdn.nakarinph.com/ABCdEfG/optionViz.png"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="https://cdn.nakarinph.com/ABCdEfG/optionViz.png"
-                alt="Website Screenshot"
-                loading="lazy"
-            /></a>
-            <!-- <a
-              class="project-proof-image"
-              href="https://cdn.nakarinph.com/projects/option-viz-02.webp"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="https://cdn.nakarinph.com/projects/option-viz-02.webp"
-                alt="Website Screenshot 2"
-                loading="lazy"
-            /></a> -->
-          </div>
-        </section>
-      </div>
+
+        <article class="case-dossier" id="case-dossier" data-folder-content tabindex="-1" aria-labelledby="dossier-title">
+            <header class="dossier-heading">
+                <p class="eyebrow">Record 04 / Market Intelligence</p>
+                <h2 id="dossier-title">optionVIZ / Full dossier</h2>
+            </header>
+            <div class="detail-body">
+                <section class="detail-block">
+                    <h3>Mission Brief</h3>
+                    <p>optionVIZ presents publicly available options data through a web interface, with data stored in Cloudflare R2.</p>
+                </section>
+                <section class="detail-block">
+                    <h3>Objective</h3>
+                    <p>Explore the options market and how its metrics can be used to understand market activity.</p>
+                </section>
+                <section class="detail-block">
+                    <h3>Subject Contribution</h3>
+                    <p>I built this project out of curiosity about the options market and the role of data visualization in examining its metrics.</p>
+                </section>
+                <section class="detail-block">
+                    <h3>Systems Deployed</h3>
+                    <div class="project-tags" aria-label="Technologies and tools"><span>Python</span><span>Cloudflare R2</span><span>Public options data</span></div>
+                </section>
+                <section class="detail-block evidence-section">
+                    <h3>Field Evidence</h3>
+                    <p class="evidence-caption">Project screenshots. Select an image to inspect the original.</p>
+                    <div class="project-gallery project-proof-grid" aria-label="optionVIZ project screenshots">
+                        <a class="project-proof-image" href="https://cdn.nakarinph.com/ABCdEfG/optionViz.png" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.nakarinph.com/ABCdEfG/optionViz.png" alt="optionVIZ implied-volatility smile and term-structure charts" loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                </section>
+                <section class="detail-block">
+                    <h3>Operational Status</h3>
+                    <p><span class="status">Ongoing</span></p>
+                    <p>Ongoing personal project exploring options data and visualization.</p>
+                    <div class="project-actions">
+                        <a class="button button-primary" href="https://options-data.nakarinph.com" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+                        <a class="button button-quiet" href="https://github.com/Nakarin010/options-data" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                    </div>
+                </section>
+            </div>
+        </article>
     </main>
-    <footer class="site-footer">
-      <p>
-        © 2026 Nakarin Phoorahong ·
-        <a href="https://nakarinph.com">nakarinph.com</a>
-      </p>
-    </footer>
+
+    <footer class="site-footer"><p>© 2026 Nakarin Phoorahong · <a href="https://nakarinph.com">nakarinph.com</a></p><span>ARCHIVE NODE: BKK-2048</span></footer>
     <script src="../js/main.js"></script>
-  </body>
+    <script src="../js/dossier.js"></script>
+</body>
 </html>
