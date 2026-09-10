@@ -213,3 +213,10 @@
 - Verification: 32 initial browser views plus 24 opened dossiers across four viewport sizes passed with no overflow, JavaScript errors, failed resources, or remaining broken screenshots. Keyboard, focus, no-JavaScript access, reduced motion, session persistence, and interaction-only audio checks passed.
 - Frozen card verification: all three specified SHA-256 hashes match; five desktop/mobile before/after screenshots are byte-identical; click/Enter/Space/link/navigation behaviors pass.
 - Status: implemented locally; no production deployment performed. Chromium only; formal HTML5 validator unavailable. Existing frozen card mobile-menu contrast and unavailable TradingJournal evidence are documented.
+
+## 2026-09-10 07:07 +07 — Dossier typography readability
+
+- Increased dossier metadata and interface labels from 7–10 px to an 11–12 px minimum, with navigation, buttons, and project descriptions set to 13–14 px where appropriate.
+- Removed the narrow-screen font-size reductions that made the archive board, portrait metadata, contact labels, footer, and case-file details difficult to read.
+- Preserved the frozen `card.html`, `css/style.css`, and `js/main.js` baseline.
+- Verification: rendered local desktop (1280 × 720), mobile (390 × 844), and narrow mobile (320 × 568) views of the homepage, archive, and case file with no horizontal overflow or console errors.
