@@ -80,6 +80,7 @@ The other checked endpoints returned HTTP 200. The optionVIZ site timed out init
 3. Refined folder metadata, cover actions, mobile spacing, and focus scroll offset beneath the sticky navigation.
 4. Darkened small text on paper to `#414c42` after numerical contrast checks.
 5. Added the generated city atmosphere, then replaced the initial lossy export with the full-resolution lossless asset requested by the user.
+6. Raised the dossier’s 7–10 px metadata and controls to an 11–12 px minimum, with navigation, actions, and project summaries at 13–14 px where appropriate. Local checks at 1280 × 720, 390 × 844, and 320 × 568 confirmed the homepage, archive, and a representative case file retain their layout without horizontal overflow or browser console errors. The frozen card route was not changed.
 
 ## Limitations
 
