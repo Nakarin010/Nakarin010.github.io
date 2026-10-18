@@ -1,0 +1,73 @@
+/* Missing record page: semantic HTML recreates the selected redacted-paper concept. */
+.not-found-page { --record-ink: #171b1a; --record-rule: #77776a; }
+.not-found-page .error-nav-node { margin-left: 38px; color: var(--muted); font: 11px var(--mono); letter-spacing: .13em; }
+.not-found-page .error-main { width: min(calc(100% - 64px), 1440px); padding-block: 58px 84px; }
+.not-found-page .missing-record {
+  position: relative;
+  padding: 27px 32px 19px;
+  background: url('../assets/archive-grain.svg'), linear-gradient(115deg, #e9e5d9, #e3dece 70%, #eee9dd);
+  color: var(--record-ink);
+  border: 1px solid #c4beab;
+  box-shadow: 0 20px 55px #0004, inset 0 0 40px #74634214;
+}
+.not-found-page .record-tab { position: absolute; top: -16px; right: -1px; width: 25%; height: 16px; background: linear-gradient(100deg, #c4974f, #dfb36b); clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%, 0 10px); }
+.not-found-page .record-masthead { display: grid; grid-template-columns: 230px 1fr auto; gap: 24px; align-items: center; padding: 23px 10px 25px; border-block: 1px solid var(--record-rule); }
+.not-found-page .record-masthead p { margin: 0; font: 11px/1.75 var(--mono); letter-spacing: .15em; }
+.not-found-page .record-categories { padding-left: 28px; border-left: 1px solid var(--record-rule); }
+.not-found-page .record-document { text-align: right; }
+.not-found-page .record-layout { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.15fr); gap: 36px; padding-block: 25px; }
+.not-found-page .record-code-column { container-type: inline-size; min-width: 0; border-right: 1px solid var(--record-rule); padding-right: 32px; }
+.not-found-page .error-code { margin: -10px 0 20px; font: 70cqw/.97 Impact, 'Arial Narrow', sans-serif; letter-spacing: -.04em; }
+.not-found-page .missing-stamp { display: inline-block; margin: 0 0 30px; padding: 9px 10px 7px; border: 5px double #9c4036; color: #9c4036; font: clamp(20px, 2.8vw, 43px)/1.1 Impact, 'Arial Narrow', sans-serif; text-transform: uppercase; transform: rotate(-2deg); }
+.not-found-page .record-index { display: grid; gap: 6px; margin: 0; font: 11px/1.5 var(--mono); letter-spacing: .09em; }
+.not-found-page .record-index div { display: grid; grid-template-columns: 70px 1fr; gap: 12px; }
+.not-found-page .record-index dd { margin: 0; }
+.not-found-page .record-kicker { margin: 0 0 26px; padding-bottom: 12px; border-bottom: 1px solid var(--record-rule); font: 12px/1.5 var(--mono); letter-spacing: .2em; }
+.not-found-page .record-message { min-width: 0; display: flex; flex-direction: column; }
+.not-found-page .record-message h1 { margin: 0; font: clamp(46px, 6.05vw, 92px)/1.04 Impact, 'Arial Narrow', sans-serif; letter-spacing: -.025em; text-wrap: balance; }
+.not-found-page .record-redactions { display: grid; gap: 13px; margin: 32px 0; }
+.not-found-page .record-redactions span { height: clamp(15px, 1.8vw, 27px); width: 94%; background: var(--record-ink); }
+.not-found-page .record-redactions span:nth-child(2) { width: 97%; background: linear-gradient(to right, var(--record-ink) 0 46%, transparent 46% 49%, var(--record-ink) 49% 64%, transparent 64% 67%, var(--record-ink) 67%); }
+.not-found-page .record-redactions span:nth-child(3) { width: 87%; }
+.not-found-page .error-explanation { margin: auto 0 28px; font-size: clamp(16px, 1.5vw, 21px); line-height: 1.6; }
+.not-found-page .error-actions { display: flex; gap: 16px; }
+.not-found-page .error-action { flex: 1; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 18px 20px; border: 1px solid var(--record-ink); font: 12px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.not-found-page .error-action-primary { background: var(--record-ink); color: #eee9dd; }
+.not-found-page .error-action span { color: #ad7933; font: 25px/1 sans-serif; }
+.not-found-page .error-action:hover { background: #d4aa67; color: var(--record-ink); }
+.not-found-page .error-action:hover span { color: inherit; }
+.not-found-page .missing-record :focus-visible { outline: 3px solid #2c666b; outline-offset: 5px; }
+.not-found-page .record-bottomline { display: flex; justify-content: space-between; gap: 14px; padding-top: 16px; border-top: 1px solid var(--record-rule); font: 11px/1.7 var(--mono); letter-spacing: .1em; }
+@media (max-width: 1050px) {
+  .not-found-page .record-layout { gap: 25px; }
+  .not-found-page .record-code-column { padding-right: 24px; }
+  .not-found-page .record-masthead { grid-template-columns: 1fr auto; }
+  .not-found-page .record-categories { display: none; }
+  .not-found-page .error-actions { flex-direction: column; gap: 10px; }
+  .not-found-page .error-action { padding-block: 14px; }
+  .not-found-page .error-nav-node { display: none; }
+}
+@media (max-width: 700px) {
+  .not-found-page .error-main { width: calc(100% - 32px); padding-block: 42px 60px; }
+  .not-found-page .missing-record { padding: 19px 20px 16px; }
+  .not-found-page .record-masthead { grid-template-columns: 1fr; padding: 14px 0; gap: 12px; }
+  .not-found-page .record-masthead p { font-size: 11px; letter-spacing: .03em; }
+  .not-found-page .record-document { display: none; }
+  .not-found-page .record-layout { grid-template-columns: 1fr; padding-block: 22px; }
+  .not-found-page .record-code-column { display: flex; gap: 12px; align-items: center; padding: 0 0 20px; border: 0; border-bottom: 1px solid var(--record-rule); }
+  .not-found-page .error-code { flex: 1; font-size: 38cqw; margin: 0; }
+  .not-found-page .missing-stamp { flex: 0 1 44%; font-size: clamp(18px, 5.5vw, 28px); margin: 0; padding: 7px; text-align: center; }
+  .not-found-page .record-index { display: none; }
+  .not-found-page .record-message h1 { font-size: clamp(42px, 10vw, 65px); text-wrap: initial; }
+  .not-found-page .record-kicker { margin-bottom: 22px; font-size: 11px; letter-spacing: .1em; }
+  .not-found-page .record-redactions { margin-block: 24px; gap: 9px; }
+  .not-found-page .record-redactions span { height: 16px; }
+  .not-found-page .error-explanation { font-size: 16px; margin-bottom: 24px; }
+  .not-found-page .error-action { font-size: 12px; padding: 15px; }
+  .not-found-page .record-bottomline { flex-direction: column; gap: 6px; font-size: 11px; letter-spacing: .04em; }
+}
+@media (max-width: 359px) {
+  .not-found-page .missing-record { padding-inline: 15px; }
+  .not-found-page .record-masthead { grid-template-columns: 1fr; }
+  .not-found-page .record-document { text-align: left; padding-top: 10px; border-top: 1px solid #77776a55; }
+}

@@ -220,3 +220,13 @@
 - Removed the narrow-screen font-size reductions that made the archive board, portrait metadata, contact labels, footer, and case-file details difficult to read.
 - Preserved the frozen `card.html`, `css/style.css`, and `js/main.js` baseline.
 - Verification: rendered local desktop (1280 × 720), mobile (390 × 844), and narrow mobile (320 × 568) views of the homepage, archive, and case file with no horizontal overflow or console errors.
+
+## 2026-10-18 10:30:02 +0700 — Redacted Record 404 and Dossier Seal footer
+
+- Implemented the two selected image concepts as semantic, editable HTML/CSS: a redacted-paper 404 with recovery buttons and a shared paper footer with seal, archive stamp, email, résumé/social navigation, and Back to top.
+- Integrated the footer across the homepage, archive, six case files, and new 404. Added a small local SVG grain texture; retained the existing card route and factual project content.
+- Refined desktop numeral sizing and mobile recovery layout through rendered checks. Addressed the reduced-motion scrolling issue identified in independent review.
+- Verification: 36 rendered layout checks across nine routes at 1440, 1024, 390, and 320 CSS pixels passed with no horizontal overflow. Checked additional tablet breakpoints, keyboard recovery, menu toggling, footer navigation, Back to top, and the fixed portrait/mobile content order.
+- Verified a nested missing URL returns HTTP 404 with the custom HTML in the local preview adapter. Local links/assets, IDs, JavaScript syntax, final diff whitespace, and frozen-file hashes passed; screenshots and QA results saved under `output/qa/2026-10-18-archive/`.
+- Updated README and design-qa.md with behavior, maintenance guidance, evidence, and verification limits.
+- Status: complete locally; not published. Production 404 routing and other browsers remain unverified.

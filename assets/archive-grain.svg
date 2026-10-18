@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <!-- Decorative seamless paper grain; no text or content is embedded in this asset. -->
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 .18 0 0 0 0 .14 0 0 0 0 .08 0 0 0 .2 0"/>
+  </filter>
+  <path fill="transparent" filter="url(#grain)" d="M0 0h180v180H0z"/>
+</svg>
