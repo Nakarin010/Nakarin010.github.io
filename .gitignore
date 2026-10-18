@@ -1,5 +1,5 @@
 tmp/
 js/home-layout-debug.js
 output/playwright
-
+output
 .cursor/hooks/state/continual-learning.json

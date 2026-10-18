@@ -1,5 +1,30 @@
 # Design QA — TOP SECRET identity dossier
 
+## 2026-10-18 — Selected 404 and footer concepts
+
+- Implemented the selected Redacted Record 404 and Dossier Seal footer as editable HTML/CSS, with a decorative local SVG paper texture and inline SVG seal. The mockup images are references, not page-sized backgrounds.
+- Added `404.html`, `css/not-found.css`, `css/archive-footer.css`, and `assets/archive-grain.svg`; replaced the footer on the home page, archive, and six case files. The 404 shares that footer. No project biography/content or frozen card assets changed.
+- Kept the existing homepage contact section. The selected footer adds the paper closing panel, not the fictional extra project story pictured above the reference footer. Omitted invented dates and other factual claims in the generated images.
+- Visual refinements: size the 404 numerals relative to their column to prevent divider collisions; pair the number and stamp on mobile and omit redundant metadata; retain readable recovery actions and footer links; disable smooth top scrolling for reduced-motion users.
+- Independent source review checked footer integration, route safety, and accessibility; the reduced-motion issue it identified was fixed.
+
+### Verification performed
+
+- 36 rendered DOM layout checks: all nine affected routes at actual CSS viewport widths 1440, 1024, 390, and 320 pixels. No horizontal overflow, missing footer, missing footer navigation links, or completed-but-broken image elements. Browser zoom was accounted for using measured `innerWidth`.
+- Additional tablet/breakpoint views at 702, 768, and 1102 pixels; inspected desktop and mobile screenshots of the 404 and footer.
+- Tested mobile menu opening/closing, keyboard-visible skip-link focus, both 404 recovery actions (including Enter), footer Home navigation, and Back to top reaching scroll position zero.
+- Verified mobile home ordering remains identity text → portrait → Tech focus, with the portrait measured at 320 × 420 pixels.
+- A temporary local preview server served the actual `404.html` body for `/projects/missing/deep-record`, with an independently checked HTTP 404 and `text/html; charset=utf-8`. Root-relative styles and scripts loaded at that nested URL.
+- All nine HTML files passed duplicate-ID, local asset/link, fragment, and single-footer checks. Both existing JavaScript files passed `node --check`; `git diff --check` passed.
+- SHA-256 values for `card.html`, `css/style.css`, and `js/main.js` still match the frozen baselines below. Existing `.DS_Store` and concept-image changes were preserved.
+- Evidence: `output/qa/2026-10-18-archive/` contains desktop/mobile screenshots and the 36-view `responsive-checks.json` result.
+
+### Current limits
+
+- Implemented locally; no deployment was performed. GitHub Pages production routing must be checked after publication; the HTTP test above used the local preview adapter.
+- Browser QA used the Codex in-app browser. Separate Safari/Firefox/device runs, a full HTML5 validator, and JavaScript-disabled/reduced-motion browser emulation were not performed. Static fallback markup and the reduced-motion CSS override were inspected in source.
+- Existing résumé/social destinations were preserved and checked in markup; external services were not contacted or re-audited.
+
 ## Scope and design decisions
 
 The homepage, project archive, and six project-detail routes use an isolated archive theme. The existing GitHub Pages routes and framework-free architecture remain intact. `blog.html` remains a redirect. `card.html`, `css/style.css`, and `js/main.js` are frozen.

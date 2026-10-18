@@ -12,12 +12,17 @@ python3 -m http.server 8765
 
 Open `http://localhost:8765/index.html`. Relative links also support the repository’s GitHub Pages URL.
 
+Preview the custom missing-page design at `http://localhost:8765/404.html`. Python's basic static server does not automatically use this file for missing URLs; GitHub Pages does after deployment. The 404 uses root-relative links and assets so it also works at deeply nested missing addresses on the custom domain or user-site URL.
+
 ## Structure
 
 - `index.html` — identity, fixed portrait verification, technology focus, featured projects, and contact channels.
 - `projects.html` — Projects / Mission Archive, with six linked records grouped by division on a fixed operations board.
 - `projects/` — six stable case-file routes with factual contributions, tools, status, and available screenshots.
 - `css/dossier.css` — graphite, bone-paper, amber, and cyan design system, scoped to `.dossier-page`.
+- `404.html` and `css/not-found.css` — responsive redacted-record error page with Home and Mission Archive recovery links.
+- `css/archive-footer.css` — shared paper dossier footer with contact, résumé, social links, and Back to top.
+- `assets/archive-grain.svg` — small local decorative paper texture used by the 404 and footer.
 - `js/dossier.js` — accessible folder opening, pull-chain lamp, and optional procedural interaction sounds.
 - `output/imagegen/bangkok-2048.webp` — original generated Bangkok atmosphere, full 1944 × 809 resolution, lossless WebP (1,623,716 bytes). The decoded pixels match the generated source exactly; it is displayed dimly behind the homepage for readability.
 - `card.html`, `css/style.css`, `js/main.js` — preserved card page and shared behavior. The dossier pages still load the shared files for navigation, portrait, and gallery behavior. Do not add dossier assets to the card route.
@@ -36,6 +41,8 @@ Sound starts enabled, but only deliberate lamp and folder actions can produce a 
 
 The homepage’s mobile order is identity text → portrait → Tech focus. The portrait is always CSS-controlled at 320 × 420 pixels, including a full-width treatment at a 320-pixel viewport.
 
+The paper footer is static HTML on the homepage, archive, six case pages, and 404, so its links do not depend on JavaScript. When changing its content, update all nine copies; styles are shared in `css/archive-footer.css`. The card route keeps its original footer. Back to top respects reduced-motion preferences. The 404 does not automatically redirect and is marked `noindex`; on mobile, duplicated record metadata is omitted to bring recovery links closer to the top.
+
 The résumé opens in a new tab. Its R2 object must serve `Content-Type: application/pdf` and `Content-Disposition: inline` for browser preview. Available screenshots open their original images. TradingJournal currently has no available screenshots or verified public repository link.
 
 ## Verification
@@ -47,7 +54,7 @@ node --check js/dossier.js
 git diff --check
 ```
 
-There is no framework build, bundler, or project test runner. Browser QA covers all eight redesigned routes at 1440 × 900, 1024 × 768, 390 × 844, and 320 × 568; folder disclosure, navigation, lamp and sound state, no-JavaScript content, reduced motion, and gallery loading. When changing this design, capture and inspect both full-page and focused screenshots and check document width against the viewport.
+There is no framework build, bundler, or project test runner. The browser QA checklist covers all nine archive routes (including the 404) at desktop, tablet, 390 × 844, and 320 × 568 sizes; folder disclosure, navigation, lamp and sound state, no-JavaScript content, reduced motion, and gallery loading. Check a nested missing URL after deployment. When changing this design, inspect screenshots and compare document width against the viewport. See `design-qa.md` for checks actually performed and any environment limitations.
 
 The frozen card baseline hashes are recorded in `design-qa.md`. Compare its desktop/mobile front, back, and mobile navigation against a fresh pre-change baseline when modifying other portfolio pages.
 
